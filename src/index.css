@@ -1,0 +1,113 @@
+/* ===== GLOBAL RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f7fb;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* ===== HEADER / NAVBAR ===== */
+header {
+  background: linear-gradient(90deg, #1e3a8a, #2563eb);
+  color: white;
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+header span {
+  font-weight: 400;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* ===== MAIN SECTION ===== */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 2rem 3rem;
+  min-height: calc(100vh - 120px);
+}
+
+/* ===== MAP SECTION ===== */
+.map-section {
+  width: 100%;
+  max-width: 1600px;       /* Wider map */
+  height: 80vh;            /* Takes 80% of viewport height */
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  background: white;
+  border: 2px solid #e5e7eb;
+  transition: all 0.3s ease;
+}
+
+.map-section:hover {
+  transform: scale(1.01);
+}
+
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  border-radius: 16px;
+}
+
+/* ===== INFO SECTION ===== */
+.info-section {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.info-card {
+  flex: 1;
+  background: white;
+  border-radius: 12px;
+  padding: 1.8rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  min-width: 300px;
+}
+
+.info-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.info-card h2 {
+  color: #1e3a8a;
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.info-card p {
+  color: #555;
+  font-size: 1rem;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #1e3a8a;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.95rem;
+  margin-top: 2rem;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.15);
+}
